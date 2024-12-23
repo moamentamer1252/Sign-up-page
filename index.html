@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up Page</title>
+    <style>
+        body {
+            background-image: url(WhatsApp\ Image\ 2024-12-06\ at\ 7.15.57\ PM.jpeg);
+            background-size: cover;
+            font-family: cursive;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+        .mom {
+            align-items: center;
+            max-width: 450px;
+            border: 3px solid black;
+            width: 450px;
+            height: auto;
+            padding: 0px 50px;
+            padding-bottom: 30px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.637);
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            backdrop-filter: blur(2px);
+            box-shadow: 0 5 10px black;
+        }
+        img {
+            width:90px;
+            height: 90px;
+            position: relative;
+            bottom: 30px;
+            left: 120px;
+        }
+        h1 {
+            left: -8px;
+            color:wheat;
+            top: -40px;
+            position:relative;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            margin-bottom:  11px;
+            font-size: 2rem;
+        }
+        input {
+            color: yellow;
+            width: 100%;
+            outline: none;
+            border: none;
+            align-items: center;
+            height: 30px;
+            background-color: rgba(0, 0, 0, 0.384);
+            border-radius: 15px;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+         ::placeholder{
+            color:rgba(240, 248, 255, 0.301);
+        font-size: small;
+        font-weight: 100;
+        font-family: Georgia, serif;
+        } 
+
+        label {
+            margin-bottom: 7px;
+            display: block;
+        }
+        input:focus {
+            border: 1px solid gold;
+        }
+        .button {
+            color: rgb(0, 0, 0);
+            background-color: yellow;
+            width: 75%;
+            height: 30px;
+            border: none;
+            outline: none;
+            font-family: Blippo, fantasy;
+            border-radius: 15px;
+            font-size: large;
+            display: block;
+            margin: 20px auto;
+        }
+
+        .button:hover{
+            border: 1px solid yellow;
+            transition: 0.2s ease;
+            background-color: goldenrod;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .icon {
+            width: 35px; 
+            height: 35px;  
+            border-radius: 50%;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            position: relative;
+            border: 1px solid black;
+        }
+
+        .icon img:hover{
+            transform: scale(1.2);
+            transition: 0.3s ;
+        }
+
+        .icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .forgot{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: small;
+        }
+
+        @media (max-width: 768px) {
+            .mom {
+                padding: 20px;
+                width: 95%;
+            }
+            h1 {
+                font-size: 1.25rem;
+            }
+            input {
+                font-size: 0.9rem;
+            }
+            .button {
+                width: 90%;
+                height: 35px;
+                font-size: medium;
+            }
+            .icon {
+                width: 35px; 
+                height: 35px;  
+            }
+        }
+
+        @media (max-width: 480px) {
+            .mom {
+                padding: 15px;
+                width: 100%;
+            }
+            h1 {
+                font-size: 1rem;
+            }
+            input {
+                font-size: 0.8rem;
+            }
+            .button {
+                width: 100%;
+                height: 30px;
+                font-size: small;
+            }
+            .icon {
+                width: 30px; 
+                height: 30px;  
+            }
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div class="mom">
+            <div>
+                <img src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg" alt="profile img">
+            </div>
+            <h1>Welcome</h1>
+            <div>
+                <label for="1">User Name</label>
+                <input id="1" type="text" placeholder="Enter your Name">
+            </div>
+            <div>
+                <label for="2">Phone</label>
+                <input id="2" type="number" placeholder="Enter your Phone">
+            </div>
+            <div>
+                <label for="4">Password</label>
+                <input id="4" type="password" placeholder="Enter your Password">
+            </div>
+            <div class="forgot">
+                <a href="Login.html">Already have account?</a>
+            </div>
+            <input class="button" type="submit" value="Sign up">
+            <div class="icon-container">
+                <div class="icon">
+                    <img src="https://static.vecteezy.com/system/resources/previews/013/948/549/non_2x/google-logo-on-transparent-white-background-free-vector.jpg" alt="Google Icon">
+                </div>
+                <div class="icon">
+                    <img src="https://static.vecteezy.com/system/resources/previews/019/136/325/non_2x/apple-logo-apple-icon-free-free-vector.jpg" alt="Apple Icon">
+                </div>
+                <div class="icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook Icon">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

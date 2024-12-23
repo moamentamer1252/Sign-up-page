@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+<style>
+    body {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.loading-container {
+    display: flex;
+    gap: 5px;
+    font-size: 2.5rem;
+}
+
+.letter {
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.letter:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.letter:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+.letter:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+.letter:nth-child(9) {
+    animation-delay: 0.8s;
+}
+
+.letter:nth-child(10) {
+    animation-delay: 0.9s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+</style>
+</head>
+<body>
+    <div class="loading-container">
+        <span class="letter">L</span>
+        <span class="letter">o</span>
+        <span class="letter">a</span>
+        <span class="letter">d</span>
+        <span class="letter">i</span>
+        <span class="letter">n</span>
+        <span class="letter">g</span>
+        <span class="letter">.</span>
+        <span class="letter">.</span>
+        <span class="letter">.</span>
+    </div>
+</body>
+</html>
